@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+  },
+  {
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+  },
+  {
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+  },
+  {
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+  },
+  {
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+  }
+]

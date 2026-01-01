@@ -1,0 +1,13 @@
+<suite name="API TestSuite">
+    <listeners>
+        <listener class-name="utils.ExtentReporter"/>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test thread-count="2" name="API Tests">
+        <classes>
+            <class name="testcases.ProductClass"/>
+            <class name="testcases.ProductDataDrivenTest"/>
+            <class name="testcases.ProductExcelTest"/>
+        </classes>
+    </test>
+</suite>
