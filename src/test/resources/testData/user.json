@@ -1,0 +1,102 @@
+[
+  {
+    "email": "arjun.reddy@example.com",
+    "username": "arjun_r",
+    "password": "Arjun@123",
+    "name": {
+      "firstname": "Arjun",
+      "lastname": "Reddy"
+    },
+    "address": {
+      "city": "Hyderabad",
+      "street": "Kukatpally Road",
+      "number": 101,
+      "zipcode": "500072",
+      "geolocation": {
+        "lat": "17.4948",
+        "long": "78.3996"
+      }
+    },
+    "phone": "+91-9000011111"
+  },
+  {
+    "email": "priya.sharma@example.com",
+    "username": "priya_s",
+    "password": "Priya@456",
+    "name": {
+      "firstname": "Priya",
+      "lastname": "Sharma"
+    },
+    "address": {
+      "city": "Bengaluru",
+      "street": "Whitefield Main Rd",
+      "number": 220,
+      "zipcode": "560066",
+      "geolocation": {
+        "lat": "12.9698",
+        "long": "77.7500"
+      }
+    },
+    "phone": "+91-9111122222"
+  },
+  {
+    "email": "rohit.mehta@example.com",
+    "username": "rohit_m",
+    "password": "Rohit@789",
+    "name": {
+      "firstname": "Rohit",
+      "lastname": "Mehta"
+    },
+    "address": {
+      "city": "Mumbai",
+      "street": "Andheri East",
+      "number": 45,
+      "zipcode": "400069",
+      "geolocation": {
+        "lat": "19.1136",
+        "long": "72.8697"
+      }
+    },
+    "phone": "+91-9222233333"
+  },
+  {
+    "email": "neha.verma@example.com",
+    "username": "neha_v",
+    "password": "Neha@321",
+    "name": {
+      "firstname": "Neha",
+      "lastname": "Verma"
+    },
+    "address": {
+      "city": "Delhi",
+      "street": "Lajpat Nagar",
+      "number": 78,
+      "zipcode": "110024",
+      "geolocation": {
+        "lat": "28.5672",
+        "long": "77.2436"
+      }
+    },
+    "phone": "+91-9333344444"
+  },
+  {
+    "email": "suresh.nair@example.com",
+    "username": "suresh_n",
+    "password": "Suresh@654",
+    "name": {
+      "firstname": "Suresh",
+      "lastname": "Nair"
+    },
+    "address": {
+      "city": "Kochi",
+      "street": "MG Road",
+      "number": 305,
+      "zipcode": "682016",
+      "geolocation": {
+        "lat": "9.9312",
+        "long": "76.2673"
+      }
+    },
+    "phone": "+91-9444455555"
+  }
+]

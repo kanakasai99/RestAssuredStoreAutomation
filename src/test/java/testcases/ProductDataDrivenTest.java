@@ -15,7 +15,7 @@ import endpoints.EndPoints;
 public class ProductDataDrivenTest extends BaseClass
 {
 
-    @Test(dataProvider="jsonDataProvider", dataProviderClass=utils.DataProviders.class)
+    @Test(dataProvider="jsonDataProduct", dataProviderClass=utils.DataProviders.class)
     public void testAddNewProduct(Map<String,String> data)
     {
 

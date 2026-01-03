@@ -14,6 +14,7 @@ import java.util.*;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import pojo.User;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,7 +22,7 @@ import java.io.FileReader;
 
 public class DataProviders {
 
-    @DataProvider
+    @DataProvider(name = "jsonDataProduct")
     public Object[][] jsonDataProvider() throws IOException {
         // Path to your JSON file
         String filePath = "C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\product.json";
@@ -40,8 +41,52 @@ public class DataProviders {
 
         return dataArray;
     }
+    @DataProvider(name = "jsonDataUser")
+    public Object[][] jsonDataUser() throws IOException {
+        // Path to your JSON file
+        String filePath = "C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\user.json";
 
-    @DataProvider
+        // Read JSON file and map it to a List of Maps
+        ObjectMapper objectMapper = new ObjectMapper();
+        List<Map<String, Object>> dataList = objectMapper.readValue(new File(filePath),
+                new TypeReference<List<Map<String, Object>>>() {
+                });
+
+        // Convert List<Map<String, String>> to Object[][]
+        Object[][] dataArray = new Object[dataList.size()][];
+        for (int i = 0; i < dataList.size(); i++) {
+            dataArray[i] = new Object[] { dataList.get(i) };
+        }
+
+        return dataArray;
+    }
+    @DataProvider(name = "jsonDataUser1")
+    public Object[][] jsonDataUser1() throws Exception {
+
+        // Path to JSON test data
+        String filePath =
+                "src/test/resources/testData/user.json";
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        // Convert JSON array → List<User>
+        List<User> users = mapper.readValue(
+                new File(filePath),
+                new TypeReference<List<User>>() {}
+        );
+
+        // Convert List<User> → Object[][]
+        Object[][] data = new Object[users.size()][1];
+
+        for (int i = 0; i < users.size(); i++) {
+            data[i][0] = users.get(i);   // one User per test run
+        }
+
+        return data;
+
+    }
+
+    /*  @DataProvider  /*CSV file
     public Object[][] csvDataProvider() throws IOException {
         // Path to the CSV file
         String filePath = "C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\product.xlsx";
@@ -66,7 +111,7 @@ public class DataProviders {
         }
 
         return dataArray;
-    }
+    }*/
     @DataProvider(name = "excelData")
     public Object[][] getExcelData() {
 

@@ -1,5 +1,5 @@
 Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -11,38 +11,45 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc/100",
-    "price": "25.99",
-    "record": "",
-    "description": "Ergonomic wireless mouse with adjustable DPI.",
-    "title": "Wireless Mouse",
-    "category": "electronic"
+    "email": "arjun.reddy@example.com",
+    "username": "arjun_r",
+    "password": "Arjun@123",
+    "name": {
+        "firstname": "Arjun",
+        "lastname": "Reddy"
+    },
+    "address": {
+        "city": "Hyderabad",
+        "street": "Kukatpally Road",
+        "number": 101,
+        "zipcode": "500072",
+        "geolocation": {
+            "lat": "17.4948",
+            "long": "78.3996"
+        }
+    },
+    "phone": "+91-9000011111"
 }
 HTTP/1.1 201 Created
-Date: Thu, 01 Jan 2026 14:22:46 GMT
+Date: Sat, 03 Jan 2026 17:54:46 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 172
+Content-Length: 8
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"ac-Kmayslbjall3ZYGANk7NqQwSlsE"
+etag: W/"8-h5EdGu1QmHe4OkjsU292jNzSLfE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=R5QrnbWVIO56f9B1VcVpMYlcWqL6%2Fd6zF6DnTTqtZdsjHEEVNh21X7VEdgPV0%2BufkpsVMht2jsGbuhhyrPgCD%2BW7%2FjGQI13hmF%2Bf2ZFX"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aDxZm%2FnEZCk%2B%2B1K724ehugRdhiP%2B2Lz0%2FYzkAEjLNaIsp3L8O0QjZPC3RBFt2AVUIPUZgMSCBEUGjXMkMl2tOnw93g3Hr1nZAVaZzcFE2%2F8%3D"}]}
 Server: cloudflare
-CF-RAY: 9b72abaebce2c08b-BOM
+CF-RAY: 9b845cfeffe43b07-BOM
 alt-svc: h3=":443"; ma=86400
 
 {
-    "id": 21,
-    "title": "Wireless Mouse",
-    "price": "25.99",
-    "description": "Ergonomic wireless mouse with adjustable DPI.",
-    "image": "https://i.pravatar.cc/100",
-    "category": "electronic"
+    "id": 1
 }
 Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -54,38 +61,45 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc/101",
-    "price": "49.99",
-    "record": "",
-    "description": "Mechanical gaming keyboard with RGB backlight.",
-    "title": "Gaming Keyboard",
-    "category": "electronic"
+    "email": "priya.sharma@example.com",
+    "username": "priya_s",
+    "password": "Priya@456",
+    "name": {
+        "firstname": "Priya",
+        "lastname": "Sharma"
+    },
+    "address": {
+        "city": "Bengaluru",
+        "street": "Whitefield Main Rd",
+        "number": 220,
+        "zipcode": "560066",
+        "geolocation": {
+            "lat": "12.9698",
+            "long": "77.7500"
+        }
+    },
+    "phone": "+91-9111122222"
 }
 HTTP/1.1 201 Created
-Date: Thu, 01 Jan 2026 14:22:47 GMT
+Date: Sat, 03 Jan 2026 17:54:48 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 174
+Content-Length: 9
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"ae-MnIL2pgZduXtu0cl88UtExqjZ4U"
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=y8Z%2BkQomxuFcZT0gneygQ5wyReEowNvyvEZG1yX%2BssB6lGtZfi370w2GE7uGrg9eXq%2FNbzLlW%2B%2B9s23a9bt7%2Bk9%2BP%2Bh21WDADLteBN4T%2FmA%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=m1M0lvKkoOzM7bU0qneVpRSdD7HeVSipGPMaQuPDa%2BbjGe%2FSoD7agaYtOquZZKFbJXtEz4qhyGEUHXRbALxysMpqub5HSDH%2Fhs%2BrqckTCmw%3D"}]}
 Server: cloudflare
-CF-RAY: 9b72abb7eab2c03d-BOM
+CF-RAY: 9b845d07dbc51c69-BOM
 alt-svc: h3=":443"; ma=86400
 
 {
-    "id": 21,
-    "title": "Gaming Keyboard",
-    "price": "49.99",
-    "description": "Mechanical gaming keyboard with RGB backlight.",
-    "image": "https://i.pravatar.cc/101",
-    "category": "electronic"
+    "id": 11
 }
 Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -97,38 +111,45 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc/102",
-    "price": "79.99",
-    "record": "",
-    "description": "Noise-canceling over-ear headphones with deep bass.",
-    "title": "Bluetooth Headphones",
-    "category": "electronics"
+    "email": "rohit.mehta@example.com",
+    "username": "rohit_m",
+    "password": "Rohit@789",
+    "name": {
+        "firstname": "Rohit",
+        "lastname": "Mehta"
+    },
+    "address": {
+        "city": "Mumbai",
+        "street": "Andheri East",
+        "number": 45,
+        "zipcode": "400069",
+        "geolocation": {
+            "lat": "19.1136",
+            "long": "72.8697"
+        }
+    },
+    "phone": "+91-9222233333"
 }
 HTTP/1.1 201 Created
-Date: Thu, 01 Jan 2026 14:22:47 GMT
+Date: Sat, 03 Jan 2026 17:54:48 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 185
+Content-Length: 9
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"b9-W5dsA20/IJ8mbaOReUppHjOVjpM"
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=m6wudy%2FTThMofUSI4riToFipQlHo7p4MK%2F%2F6psr2WC4jGlVMbX%2BkW4PK6oyF2i0iHw5gBnvJHrxUMt3rKQwCTQpLmUHn%2B%2FJ3acQT%2BREJips%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YqhtqIOSnHx4g1MlnCq5BznXUyxUNCwReYwkzV43T2E1lFobmqbOoerZu8eSoqDJl63jVmtHzdfAEo89btvf8xSLAOSvAyccrM%2FsJnqdqeA%3D"}]}
 Server: cloudflare
-CF-RAY: 9b72abbb7e334907-BOM
+CF-RAY: 9b845d0b7a30ffa9-BOM
 alt-svc: h3=":443"; ma=86400
 
 {
-    "id": 21,
-    "title": "Bluetooth Headphones",
-    "price": "79.99",
-    "description": "Noise-canceling over-ear headphones with deep bass.",
-    "image": "https://i.pravatar.cc/102",
-    "category": "electronics"
+    "id": 11
 }
 Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -140,38 +161,45 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc/103",
-    "price": "129.99",
-    "record": "",
-    "description": "Fitness smartwatch with heart rate monitor and GPS.",
-    "title": "Smart Watch",
-    "category": "wearables"
+    "email": "neha.verma@example.com",
+    "username": "neha_v",
+    "password": "Neha@321",
+    "name": {
+        "firstname": "Neha",
+        "lastname": "Verma"
+    },
+    "address": {
+        "city": "Delhi",
+        "street": "Lajpat Nagar",
+        "number": 78,
+        "zipcode": "110024",
+        "geolocation": {
+            "lat": "28.5672",
+            "long": "77.2436"
+        }
+    },
+    "phone": "+91-9333344444"
 }
 HTTP/1.1 201 Created
-Date: Thu, 01 Jan 2026 14:22:48 GMT
+Date: Sat, 03 Jan 2026 17:54:49 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 175
+Content-Length: 8
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"af-yMXKJM5LuHpB4f2Y7VORjIbYrCw"
+etag: W/"8-h5EdGu1QmHe4OkjsU292jNzSLfE"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9nwGftinMMXpaIdeDPNcPCyCGw%2BYruOt5ycuhNXvpENILFFr26WT6DuAHCwyATRh8gRzyGZUGIWsw6p1JG6FwXOT7IMgbZEbxF3u%2BsJ%2BRcw%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5km3mfI8m4HwMENGzYf%2BwuRzBMqeyFezbPYPcIaTLIO8oIpFErmZCxzoMJkLt%2BdDJQJcALMW7irDzZpfBAfL6Vc3FUsS%2BnNyq1blVex%2BzZ0%3D"}]}
 Server: cloudflare
-CF-RAY: 9b72abbe8ee44738-BOM
+CF-RAY: 9b845d0e6b0c3a47-BOM
 alt-svc: h3=":443"; ma=86400
 
 {
-    "id": 21,
-    "title": "Smart Watch",
-    "price": "129.99",
-    "description": "Fitness smartwatch with heart rate monitor and GPS.",
-    "image": "https://i.pravatar.cc/103",
-    "category": "wearables"
+    "id": 1
 }
 Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -183,33 +211,40 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "https://i.pravatar.cc/104",
-    "price": "39.99",
-    "record": "",
-    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
-    "title": "Portable Speaker",
-    "category": "audio"
+    "email": "suresh.nair@example.com",
+    "username": "suresh_n",
+    "password": "Suresh@654",
+    "name": {
+        "firstname": "Suresh",
+        "lastname": "Nair"
+    },
+    "address": {
+        "city": "Kochi",
+        "street": "MG Road",
+        "number": 305,
+        "zipcode": "682016",
+        "geolocation": {
+            "lat": "9.9312",
+            "long": "76.2673"
+        }
+    },
+    "phone": "+91-9444455555"
 }
 HTTP/1.1 201 Created
-Date: Thu, 01 Jan 2026 14:22:48 GMT
+Date: Sat, 03 Jan 2026 17:54:49 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 179
+Content-Length: 9
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"b3-zmnvbpBiQIgFaJfde7k8V4rmmQE"
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Nc36BrPyPxZOErCqB0wXZH1%2FZIz1iwPv%2FAUG%2BnjZzHfrpZgf06QXCd0qm0UcIm7rncu5lAvA1tumi7Y8IkrzJLgG5NPzHE%2BBTzHCNnMP9YU%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6prSsO1tjDO6adWWaOlbJrAV%2FYn9m2jhAOD4YLF3G6L2Q%2FsY3xKI9NhwEXjznDUN9%2BHZTKudqYN4lt2KlIldcnpC5zGwQ8y9xD2Ekr%2FzWyg%3D"}]}
 Server: cloudflare
-CF-RAY: 9b72abc0be0540b1-BOM
+CF-RAY: 9b845d121a163f6d-BOM
 alt-svc: h3=":443"; ma=86400
 
 {
-    "id": 21,
-    "title": "Portable Speaker",
-    "price": "39.99",
-    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
-    "image": "https://i.pravatar.cc/104",
-    "category": "audio"
+    "id": 11
 }

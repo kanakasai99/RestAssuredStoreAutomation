@@ -1,13 +1,26 @@
-<suite name="API TestSuite">
+<suite name="API TestSuite" >
     <listeners>
         <listener class-name="utils.ExtentReporter"/>
         <listener class-name="utils.TestListener"/>
     </listeners>
-    <test thread-count="2" name="API Tests">
+    <test thread-count="2" name="API Product Tests">
         <classes>
             <class name="testcases.ProductClass"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="API Product DDT Tests">
+        <classes>
             <class name="testcases.ProductDataDrivenTest"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="API Product Excel Tests">
+        <classes>
             <class name="testcases.ProductExcelTest"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="API Users Tests">
+        <classes>
+            <class name="testcases.UserTests"/>
         </classes>
     </test>
 </suite>
