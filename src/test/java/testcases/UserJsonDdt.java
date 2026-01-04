@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class UserDdt extends BaseClass
+public class UserJsonDdt extends BaseClass
 {
 
     @Test(dataProvider = "jsonDataUser",

@@ -1,10 +1,5 @@
 package utils;
-import java.io.FileInputStream; import java.io.FileNotFoundException;
-import java.io.IOException;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -13,34 +8,85 @@ import java.util.*;
 
 public class ExcelReader {
 
-    public static List<Map<String, String>> readExcel(String path) throws IOException {
+    public static List<Map<String, String>> readExcel(
+            String filePath,
+            String sheetName
+    ) {
 
-        List<Map<String, String>> data = new ArrayList<>();
+        List<Map<String, String>> dataList = new ArrayList<>();
 
-        FileInputStream file = new FileInputStream("C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\product.xlsx");
-        XSSFWorkbook workbook = new XSSFWorkbook(file);
-        XSSFSheet sheet = workbook.getSheet("Sheet1");
+        try (FileInputStream file = new FileInputStream(filePath);
+             Workbook workbook = new XSSFWorkbook(file)) {
 
-        int rows = sheet.getLastRowNum();
-        int cols = sheet.getRow(0).getLastCellNum();
+            Sheet sheet = workbook.getSheet(sheetName);
 
-        for (int r = 1; r <= rows; r++) { // skip header
-            XSSFRow row = sheet.getRow(r);
-            List<String> rowData = new ArrayList<>();
+            Row headerRow = sheet.getRow(0);
+            int rowCount = sheet.getPhysicalNumberOfRows();
+            int colCount = headerRow.getLastCellNum();
 
-            for (int c = 0; c < cols; c++) {
-                XSSFCell cell = row.getCell(c);
-                rowData.add(cell.toString());
+            DataFormatter formatter = new DataFormatter();
+
+            // Read rows (skip header)
+            for (int i = 1; i < rowCount; i++) {
+
+                Row row = sheet.getRow(i);
+                Map<String, String> rowData = new LinkedHashMap<>();
+
+                for (int j = 0; j < colCount; j++) {
+                    String key = headerRow.getCell(j).getStringCellValue();
+                    String value = formatter.formatCellValue(row.getCell(j));
+                    rowData.put(key, value);
+                }
+
+                dataList.add(rowData);
             }
-            data.add((Map<String, String>) rowData);
+
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to read Excel", e);
         }
 
-        workbook.close();
-        file.close();
-
-        return data;
+        return dataList;
     }
-}
 
+
+        public static List<Map<String, String>> readUserExcel(
+                String filePath,
+                String sheetName
+        ) {
+
+            List<Map<String, String>> dataList = new ArrayList<>();
+
+            try (FileInputStream fis = new FileInputStream(filePath);
+                 Workbook workbook = new XSSFWorkbook(fis)) {
+
+                Sheet sheet = workbook.getSheet(sheetName);
+                Row headerRow = sheet.getRow(0);
+
+                int rowCount = sheet.getPhysicalNumberOfRows();
+                int colCount = headerRow.getLastCellNum();
+
+                DataFormatter formatter = new DataFormatter();
+
+                for (int i = 1; i < rowCount; i++) {
+
+                    Row row = sheet.getRow(i);
+                    Map<String, String> rowData = new HashMap<>();
+
+                    for (int j = 0; j < colCount; j++) {
+                        String key = headerRow.getCell(j).getStringCellValue();
+                        String value = formatter.formatCellValue(row.getCell(j));
+                        rowData.put(key, value);
+                    }
+
+                    dataList.add(rowData);
+                }
+
+            } catch (Exception e) {
+                throw new RuntimeException("Failed to read Excel", e);
+            }
+
+            return dataList;
+        }
+    }
 
 

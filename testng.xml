@@ -1,26 +1,36 @@
-<suite name="API TestSuite" >
+<suite name="API TestSuite" threadcount="5" parallel="tests">
     <listeners>
         <listener class-name="utils.ExtentReporter"/>
         <listener class-name="utils.TestListener"/>
     </listeners>
-    <test thread-count="2" name="API Product Tests">
+    <test  name="API Product Basic Tests">
         <classes>
-            <class name="testcases.ProductClass"/>
+            <class name="testcases.ProductBasicTest"/>
         </classes>
     </test>
-    <test thread-count="2" name="API Product DDT Tests">
+    <test  name="API Product External Json DDT Tests">
         <classes>
-            <class name="testcases.ProductDataDrivenTest"/>
+            <class name="testcases.ProductJsonDdt"/>
         </classes>
     </test>
-    <test thread-count="2" name="API Product Excel Tests">
+    <test  name="API Product Excel data Tests">
         <classes>
             <class name="testcases.ProductExcelTest"/>
         </classes>
     </test>
-    <test thread-count="2" name="API Users Tests">
+    <test  name="API Users Basic Tests">
         <classes>
-            <class name="testcases.UserTests"/>
+            <class name="testcases.UserBasicTests"/>
+        </classes>
+    </test>
+    <test  name="API Users External Json DDT Tests">
+        <classes>
+            <class name="testcases.UserJsonDdt"/>
+        </classes>
+    </test>
+    <test  name="API Users Excel data Tests">
+        <classes>
+            <class name="testcases.UserExcelTest"/>
         </classes>
     </test>
 </suite>

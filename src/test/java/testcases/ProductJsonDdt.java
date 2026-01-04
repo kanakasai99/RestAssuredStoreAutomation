@@ -12,7 +12,7 @@ import io.restassured.http.ContentType;
 import pojo.Product;
 import endpoints.EndPoints;
 
-public class ProductDataDrivenTest extends BaseClass
+public class ProductJsonDdt extends BaseClass
 {
 
     @Test(dataProvider="jsonDataProduct", dataProviderClass=utils.DataProviders.class)
@@ -54,5 +54,6 @@ public class ProductDataDrivenTest extends BaseClass
 
         System.out.println("Deleted Product ID======> "+ productId);
     }
+
 
 }

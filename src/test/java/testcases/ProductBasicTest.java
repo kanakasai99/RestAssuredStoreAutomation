@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
-public class ProductClass extends BaseClass{
+public class ProductBasicTest extends BaseClass{
     @Test
     public void getAllProducts(){
         given()

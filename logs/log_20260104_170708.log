@@ -1,0 +1,426 @@
+2026-01-04 17:07:10 INFO  ProductExcelTest:25 - Starting product creation test
+2026-01-04 17:07:10 INFO  ProductExcelTest:26 - Payload received from Excel: {record=, title=Wireless Mouse, price=25.99, description=Ergonomic wireless mouse with adjustable DPI., image=https://i.pravatar.cc/100, category=electronic}
+2026-01-04 17:07:12 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://fakestoreapi.com:443
+2026-01-04 17:07:12 DEBUG DefaultClientConnectionOperator:177 - Connecting to fakestoreapi.com:443
+2026-01-04 17:07:12 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2026-01-04 17:07:12 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2026-01-04 17:07:12 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2026-01-04 17:07:12 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2026-01-04 17:07:12 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2026-01-04 17:07:12 DEBUG DefaultClientConnection:274 - Sending request: POST /products HTTP/1.1
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "POST /products HTTP/1.1[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Content-Length: 176[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Host: fakestoreapi.com[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2026-01-04 17:07:12 DEBUG wire:73 -  >> "[\r][\n]"
+2026-01-04 17:07:12 DEBUG headers:278 - >> POST /products HTTP/1.1
+2026-01-04 17:07:12 DEBUG headers:281 - >> Accept: */*
+2026-01-04 17:07:12 DEBUG headers:281 - >> Content-Type: application/json
+2026-01-04 17:07:12 DEBUG headers:281 - >> Content-Length: 176
+2026-01-04 17:07:12 DEBUG headers:281 - >> Host: fakestoreapi.com
+2026-01-04 17:07:12 DEBUG headers:281 - >> Connection: Keep-Alive
+2026-01-04 17:07:12 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+2026-01-04 17:07:12 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2026-01-04 17:07:12 DEBUG wire:87 -  >> "{"record":"","title":"Wireless Mouse","price":"25.99","description":"Ergonomic wireless mouse with adjustable DPI.","image":"https://i.pravatar.cc/100","category":"electronic"}"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Date: Sun, 04 Jan 2026 11:37:12 GMT[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Content-Length: 172[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "etag: W/"ac-Kmayslbjall3ZYGANk7NqQwSlsE"[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "x-powered-by: Express[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "cf-cache-status: DYNAMIC[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ta1HyfwcMUB%2F4IGNbeuOt4FiGjlWIWJuRX03ui4bBXB86mb0EurX0LPHe4poMErWojGasGVZm1FAI7q0MuuV1JxFcORkCcJDm6VVtx8WKPM%3D"}]}[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "CF-RAY: 9b8a7146dd538504-BOM[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "[\r][\n]"
+2026-01-04 17:07:13 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2026-01-04 17:07:13 DEBUG headers:262 - << HTTP/1.1 201 Created
+2026-01-04 17:07:13 DEBUG headers:265 - << Date: Sun, 04 Jan 2026 11:37:12 GMT
+2026-01-04 17:07:13 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2026-01-04 17:07:13 DEBUG headers:265 - << Content-Length: 172
+2026-01-04 17:07:13 DEBUG headers:265 - << Connection: keep-alive
+2026-01-04 17:07:13 DEBUG headers:265 - << access-control-allow-origin: *
+2026-01-04 17:07:13 DEBUG headers:265 - << etag: W/"ac-Kmayslbjall3ZYGANk7NqQwSlsE"
+2026-01-04 17:07:13 DEBUG headers:265 - << x-powered-by: Express
+2026-01-04 17:07:13 DEBUG headers:265 - << cf-cache-status: DYNAMIC
+2026-01-04 17:07:13 DEBUG headers:265 - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2026-01-04 17:07:13 DEBUG headers:265 - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ta1HyfwcMUB%2F4IGNbeuOt4FiGjlWIWJuRX03ui4bBXB86mb0EurX0LPHe4poMErWojGasGVZm1FAI7q0MuuV1JxFcORkCcJDm6VVtx8WKPM%3D"}]}
+2026-01-04 17:07:13 DEBUG headers:265 - << Server: cloudflare
+2026-01-04 17:07:13 DEBUG headers:265 - << CF-RAY: 9b8a7146dd538504-BOM
+2026-01-04 17:07:13 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2026-01-04 17:07:13 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2026-01-04 17:07:13 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2026-01-04 17:07:13 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2026-01-04 17:07:13 DEBUG wire:87 -  << "{"id":21,"title":"Wireless Mouse","price":"25.99","description":"Ergonomic wireless mouse with adjustable DPI.","image":"https://i.pravatar.cc/100","category":"electronic"}"
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6903ed0e
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2026-01-04 17:07:13 INFO  ProductExcelTest:25 - Starting product creation test
+2026-01-04 17:07:13 INFO  ProductExcelTest:26 - Payload received from Excel: {record=, title=Gaming Keyboard, price=49.99, description=Mechanical gaming keyboard with RGB backlight., image=https://i.pravatar.cc/101, category=electronic}
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://fakestoreapi.com:443
+2026-01-04 17:07:13 DEBUG DefaultClientConnectionOperator:177 - Connecting to fakestoreapi.com:443
+2026-01-04 17:07:13 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2026-01-04 17:07:13 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2026-01-04 17:07:13 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2026-01-04 17:07:13 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2026-01-04 17:07:13 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2026-01-04 17:07:13 DEBUG DefaultClientConnection:274 - Sending request: POST /products HTTP/1.1
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "POST /products HTTP/1.1[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Content-Length: 178[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Host: fakestoreapi.com[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "[\r][\n]"
+2026-01-04 17:07:13 DEBUG headers:278 - >> POST /products HTTP/1.1
+2026-01-04 17:07:13 DEBUG headers:281 - >> Accept: */*
+2026-01-04 17:07:13 DEBUG headers:281 - >> Content-Type: application/json
+2026-01-04 17:07:13 DEBUG headers:281 - >> Content-Length: 178
+2026-01-04 17:07:13 DEBUG headers:281 - >> Host: fakestoreapi.com
+2026-01-04 17:07:13 DEBUG headers:281 - >> Connection: Keep-Alive
+2026-01-04 17:07:13 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+2026-01-04 17:07:13 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2026-01-04 17:07:13 DEBUG wire:87 -  >> "{"record":"","title":"Gaming Keyboard","price":"49.99","description":"Mechanical gaming keyboard with RGB backlight.","image":"https://i.pravatar.cc/101","category":"electronic"}"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Date: Sun, 04 Jan 2026 11:37:12 GMT[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Content-Length: 174[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "etag: W/"ae-MnIL2pgZduXtu0cl88UtExqjZ4U"[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "x-powered-by: Express[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "cf-cache-status: DYNAMIC[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rLHwtJUhcZJbgNODN%2BOK78v85kBw52jk31OzXXAlqMm0qs4lP%2BMBlizr58V7KV86Z8mSXt2jhoJJ6KpOYeUcbN0H6VcgzeEbpSzVQ2tz2pU%3D"}]}[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "CF-RAY: 9b8a714bd93be565-BOM[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  << "[\r][\n]"
+2026-01-04 17:07:13 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2026-01-04 17:07:13 DEBUG headers:262 - << HTTP/1.1 201 Created
+2026-01-04 17:07:13 DEBUG headers:265 - << Date: Sun, 04 Jan 2026 11:37:12 GMT
+2026-01-04 17:07:13 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2026-01-04 17:07:13 DEBUG headers:265 - << Content-Length: 174
+2026-01-04 17:07:13 DEBUG headers:265 - << Connection: keep-alive
+2026-01-04 17:07:13 DEBUG headers:265 - << access-control-allow-origin: *
+2026-01-04 17:07:13 DEBUG headers:265 - << etag: W/"ae-MnIL2pgZduXtu0cl88UtExqjZ4U"
+2026-01-04 17:07:13 DEBUG headers:265 - << x-powered-by: Express
+2026-01-04 17:07:13 DEBUG headers:265 - << cf-cache-status: DYNAMIC
+2026-01-04 17:07:13 DEBUG headers:265 - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2026-01-04 17:07:13 DEBUG headers:265 - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rLHwtJUhcZJbgNODN%2BOK78v85kBw52jk31OzXXAlqMm0qs4lP%2BMBlizr58V7KV86Z8mSXt2jhoJJ6KpOYeUcbN0H6VcgzeEbpSzVQ2tz2pU%3D"}]}
+2026-01-04 17:07:13 DEBUG headers:265 - << Server: cloudflare
+2026-01-04 17:07:13 DEBUG headers:265 - << CF-RAY: 9b8a714bd93be565-BOM
+2026-01-04 17:07:13 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2026-01-04 17:07:13 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2026-01-04 17:07:13 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2026-01-04 17:07:13 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2026-01-04 17:07:13 DEBUG wire:87 -  << "{"id":21,"title":"Gaming Keyboard","price":"49.99","description":"Mechanical gaming keyboard with RGB backlight.","image":"https://i.pravatar.cc/101","category":"electronic"}"
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@704d3b00
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2026-01-04 17:07:13 INFO  ProductExcelTest:25 - Starting product creation test
+2026-01-04 17:07:13 INFO  ProductExcelTest:26 - Payload received from Excel: {record=, title=Bluetooth Headphones, price=79.99, description=Noise-canceling over-ear headphones with deep bass., image=https://i.pravatar.cc/102, category=electronics}
+2026-01-04 17:07:13 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://fakestoreapi.com:443
+2026-01-04 17:07:13 DEBUG DefaultClientConnectionOperator:177 - Connecting to fakestoreapi.com:443
+2026-01-04 17:07:13 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2026-01-04 17:07:13 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2026-01-04 17:07:13 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2026-01-04 17:07:13 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2026-01-04 17:07:13 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2026-01-04 17:07:13 DEBUG DefaultClientConnection:274 - Sending request: POST /products HTTP/1.1
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "POST /products HTTP/1.1[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Content-Length: 189[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Host: fakestoreapi.com[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2026-01-04 17:07:13 DEBUG wire:73 -  >> "[\r][\n]"
+2026-01-04 17:07:13 DEBUG headers:278 - >> POST /products HTTP/1.1
+2026-01-04 17:07:13 DEBUG headers:281 - >> Accept: */*
+2026-01-04 17:07:13 DEBUG headers:281 - >> Content-Type: application/json
+2026-01-04 17:07:13 DEBUG headers:281 - >> Content-Length: 189
+2026-01-04 17:07:13 DEBUG headers:281 - >> Host: fakestoreapi.com
+2026-01-04 17:07:13 DEBUG headers:281 - >> Connection: Keep-Alive
+2026-01-04 17:07:13 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+2026-01-04 17:07:13 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2026-01-04 17:07:13 DEBUG wire:87 -  >> "{"record":"","title":"Bluetooth Headphones","price":"79.99","description":"Noise-canceling over-ear headphones with deep bass.","image":"https://i.pravatar.cc/102","category":"electronics"}"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Date: Sun, 04 Jan 2026 11:37:12 GMT[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Length: 185[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "etag: W/"b9-W5dsA20/IJ8mbaOReUppHjOVjpM"[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "x-powered-by: Express[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "cf-cache-status: DYNAMIC[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9ajjj9SmZtf4Zv2ZxSaCEQN8o7b7mGnkxPud8ZG4V%2FXnhgoXSWkFbOmDJO0iA4z1SfImE7Oiz5xfUG9T94fk8UbobJ%2Fj7VmStgrdy%2FgaIic%3D"}]}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "CF-RAY: 9b8a714e68253c04-BOM[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "[\r][\n]"
+2026-01-04 17:07:14 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:262 - << HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:265 - << Date: Sun, 04 Jan 2026 11:37:12 GMT
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Length: 185
+2026-01-04 17:07:14 DEBUG headers:265 - << Connection: keep-alive
+2026-01-04 17:07:14 DEBUG headers:265 - << access-control-allow-origin: *
+2026-01-04 17:07:14 DEBUG headers:265 - << etag: W/"b9-W5dsA20/IJ8mbaOReUppHjOVjpM"
+2026-01-04 17:07:14 DEBUG headers:265 - << x-powered-by: Express
+2026-01-04 17:07:14 DEBUG headers:265 - << cf-cache-status: DYNAMIC
+2026-01-04 17:07:14 DEBUG headers:265 - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2026-01-04 17:07:14 DEBUG headers:265 - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9ajjj9SmZtf4Zv2ZxSaCEQN8o7b7mGnkxPud8ZG4V%2FXnhgoXSWkFbOmDJO0iA4z1SfImE7Oiz5xfUG9T94fk8UbobJ%2Fj7VmStgrdy%2FgaIic%3D"}]}
+2026-01-04 17:07:14 DEBUG headers:265 - << Server: cloudflare
+2026-01-04 17:07:14 DEBUG headers:265 - << CF-RAY: 9b8a714e68253c04-BOM
+2026-01-04 17:07:14 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2026-01-04 17:07:14 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2026-01-04 17:07:14 DEBUG wire:87 -  << "{"id":21,"title":"Bluetooth Headphones","price":"79.99","description":"Noise-canceling over-ear headphones with deep bass.","image":"https://i.pravatar.cc/102","category":"electronics"}"
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4a9bce99
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 INFO  ProductExcelTest:25 - Starting product creation test
+2026-01-04 17:07:14 INFO  ProductExcelTest:26 - Payload received from Excel: {record=, title=Smart Watch, price=129.99, description=Fitness smartwatch with heart rate monitor and GPS., image=https://i.pravatar.cc/103, category=wearables}
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://fakestoreapi.com:443
+2026-01-04 17:07:14 DEBUG DefaultClientConnectionOperator:177 - Connecting to fakestoreapi.com:443
+2026-01-04 17:07:14 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2026-01-04 17:07:14 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2026-01-04 17:07:14 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2026-01-04 17:07:14 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2026-01-04 17:07:14 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2026-01-04 17:07:14 DEBUG DefaultClientConnection:274 - Sending request: POST /products HTTP/1.1
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "POST /products HTTP/1.1[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Content-Length: 179[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Host: fakestoreapi.com[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "[\r][\n]"
+2026-01-04 17:07:14 DEBUG headers:278 - >> POST /products HTTP/1.1
+2026-01-04 17:07:14 DEBUG headers:281 - >> Accept: */*
+2026-01-04 17:07:14 DEBUG headers:281 - >> Content-Type: application/json
+2026-01-04 17:07:14 DEBUG headers:281 - >> Content-Length: 179
+2026-01-04 17:07:14 DEBUG headers:281 - >> Host: fakestoreapi.com
+2026-01-04 17:07:14 DEBUG headers:281 - >> Connection: Keep-Alive
+2026-01-04 17:07:14 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+2026-01-04 17:07:14 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2026-01-04 17:07:14 DEBUG wire:87 -  >> "{"record":"","title":"Smart Watch","price":"129.99","description":"Fitness smartwatch with heart rate monitor and GPS.","image":"https://i.pravatar.cc/103","category":"wearables"}"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Date: Sun, 04 Jan 2026 11:37:13 GMT[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Length: 175[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "etag: W/"af-yMXKJM5LuHpB4f2Y7VORjIbYrCw"[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "x-powered-by: Express[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "cf-cache-status: DYNAMIC[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G2KbSUqsmPNeyXTrrJF7QYc4EfJgTNxHXg%2Bq19n2%2F1vtoEgkHVK0YxX%2BTgFmD8syKlcO1%2FxFMcOwJ%2BPQzooAfN3AfQwy9bALztqYITyA90k%3D"}]}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "CF-RAY: 9b8a7151293435b8-BOM[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "[\r][\n]"
+2026-01-04 17:07:14 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:262 - << HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:265 - << Date: Sun, 04 Jan 2026 11:37:13 GMT
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Length: 175
+2026-01-04 17:07:14 DEBUG headers:265 - << Connection: keep-alive
+2026-01-04 17:07:14 DEBUG headers:265 - << access-control-allow-origin: *
+2026-01-04 17:07:14 DEBUG headers:265 - << etag: W/"af-yMXKJM5LuHpB4f2Y7VORjIbYrCw"
+2026-01-04 17:07:14 DEBUG headers:265 - << x-powered-by: Express
+2026-01-04 17:07:14 DEBUG headers:265 - << cf-cache-status: DYNAMIC
+2026-01-04 17:07:14 DEBUG headers:265 - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2026-01-04 17:07:14 DEBUG headers:265 - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G2KbSUqsmPNeyXTrrJF7QYc4EfJgTNxHXg%2Bq19n2%2F1vtoEgkHVK0YxX%2BTgFmD8syKlcO1%2FxFMcOwJ%2BPQzooAfN3AfQwy9bALztqYITyA90k%3D"}]}
+2026-01-04 17:07:14 DEBUG headers:265 - << Server: cloudflare
+2026-01-04 17:07:14 DEBUG headers:265 - << CF-RAY: 9b8a7151293435b8-BOM
+2026-01-04 17:07:14 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2026-01-04 17:07:14 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2026-01-04 17:07:14 DEBUG wire:87 -  << "{"id":21,"title":"Smart Watch","price":"129.99","description":"Fitness smartwatch with heart rate monitor and GPS.","image":"https://i.pravatar.cc/103","category":"wearables"}"
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@249b54af
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 INFO  ProductExcelTest:25 - Starting product creation test
+2026-01-04 17:07:14 INFO  ProductExcelTest:26 - Payload received from Excel: {record=, title=Portable Speaker, price=39.99, description=Waterproof Bluetooth speaker with 12-hour battery life., image=https://i.pravatar.cc/104, category=audio}
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://fakestoreapi.com:443
+2026-01-04 17:07:14 DEBUG DefaultClientConnectionOperator:177 - Connecting to fakestoreapi.com:443
+2026-01-04 17:07:14 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2026-01-04 17:07:14 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2026-01-04 17:07:14 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2026-01-04 17:07:14 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2026-01-04 17:07:14 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2026-01-04 17:07:14 DEBUG DefaultClientConnection:274 - Sending request: POST /products HTTP/1.1
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "POST /products HTTP/1.1[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Content-Length: 183[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Host: fakestoreapi.com[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  >> "[\r][\n]"
+2026-01-04 17:07:14 DEBUG headers:278 - >> POST /products HTTP/1.1
+2026-01-04 17:07:14 DEBUG headers:281 - >> Accept: */*
+2026-01-04 17:07:14 DEBUG headers:281 - >> Content-Type: application/json
+2026-01-04 17:07:14 DEBUG headers:281 - >> Content-Length: 183
+2026-01-04 17:07:14 DEBUG headers:281 - >> Host: fakestoreapi.com
+2026-01-04 17:07:14 DEBUG headers:281 - >> Connection: Keep-Alive
+2026-01-04 17:07:14 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+2026-01-04 17:07:14 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2026-01-04 17:07:14 DEBUG wire:87 -  >> "{"record":"","title":"Portable Speaker","price":"39.99","description":"Waterproof Bluetooth speaker with 12-hour battery life.","image":"https://i.pravatar.cc/104","category":"audio"}"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Date: Sun, 04 Jan 2026 11:37:13 GMT[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Content-Length: 179[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "etag: W/"b3-zmnvbpBiQIgFaJfde7k8V4rmmQE"[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "x-powered-by: Express[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "cf-cache-status: DYNAMIC[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ttgnA%2FbZAsRtgZpVxTDALTiqmTc9AzyeAxr%2FWzOR9QW6QuY23VCfwU1WMgA6ruZeB5MT6qPS4hkyjlJ2ZRo48R3uz6rHjks8qzKfu97D4xg%3D"}]}[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "CF-RAY: 9b8a71533c7e85e4-BOM[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2026-01-04 17:07:14 DEBUG wire:73 -  << "[\r][\n]"
+2026-01-04 17:07:14 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:262 - << HTTP/1.1 201 Created
+2026-01-04 17:07:14 DEBUG headers:265 - << Date: Sun, 04 Jan 2026 11:37:13 GMT
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG headers:265 - << Content-Length: 179
+2026-01-04 17:07:14 DEBUG headers:265 - << Connection: keep-alive
+2026-01-04 17:07:14 DEBUG headers:265 - << access-control-allow-origin: *
+2026-01-04 17:07:14 DEBUG headers:265 - << etag: W/"b3-zmnvbpBiQIgFaJfde7k8V4rmmQE"
+2026-01-04 17:07:14 DEBUG headers:265 - << x-powered-by: Express
+2026-01-04 17:07:14 DEBUG headers:265 - << cf-cache-status: DYNAMIC
+2026-01-04 17:07:14 DEBUG headers:265 - << Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2026-01-04 17:07:14 DEBUG headers:265 - << Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ttgnA%2FbZAsRtgZpVxTDALTiqmTc9AzyeAxr%2FWzOR9QW6QuY23VCfwU1WMgA6ruZeB5MT6qPS4hkyjlJ2ZRo48R3uz6rHjks8qzKfu97D4xg%3D"}]}
+2026-01-04 17:07:14 DEBUG headers:265 - << Server: cloudflare
+2026-01-04 17:07:14 DEBUG headers:265 - << CF-RAY: 9b8a71533c7e85e4-BOM
+2026-01-04 17:07:14 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2026-01-04 17:07:14 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2026-01-04 17:07:14 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2026-01-04 17:07:14 DEBUG wire:87 -  << "{"id":21,"title":"Portable Speaker","price":"39.99","description":"Waterproof Bluetooth speaker with 12-hour battery life.","image":"https://i.pravatar.cc/104","category":"audio"}"
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7d088813
+2026-01-04 17:07:14 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+2026-01-04 17:07:14 DEBUG cache:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+2026-01-04 17:07:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+2026-01-04 17:07:14 DEBUG cache:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/exception.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/category.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/device.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/author.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+2026-01-04 17:07:15 DEBUG cache:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+2026-01-04 17:07:15 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+2026-01-04 17:07:15 DEBUG cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Sai/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"

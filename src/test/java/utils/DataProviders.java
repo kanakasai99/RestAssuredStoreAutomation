@@ -115,51 +115,37 @@ public class DataProviders {
     @DataProvider(name = "excelData")
     public Object[][] getExcelData() {
 
-        List<Map<String, String>> dataList = new ArrayList<>();
+        String path =
+                "C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\product.xlsx";
 
-        try {
-            FileInputStream file =
-                    new FileInputStream("C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\product.xlsx");
+        List<Map<String, String>> dataList =
+                ExcelReader.readExcel(path, "Sheet1");
 
-            Workbook workbook = new XSSFWorkbook(file);
-            Sheet sheet = workbook.getSheet("Sheet1");
-
-            // Header row (column names)
-            Row headerRow = sheet.getRow(0);
-            int rowCount = sheet.getPhysicalNumberOfRows();
-            int colCount = headerRow.getLastCellNum();
-
-            DataFormatter formatter = new DataFormatter();
-
-            // Start from row 1 (skip header)
-            for (int i = 1; i < rowCount; i++) {
-
-                Row row = sheet.getRow(i);
-                Map<String, String> rowData = new HashMap<>();
-
-                for (int j = 0; j < colCount; j++) {
-                    String key = headerRow.getCell(j).getStringCellValue();
-                    String value = formatter.formatCellValue(row.getCell(j));
-                    rowData.put(key, value);
-                }
-
-                dataList.add(rowData);
-            }
-
-            workbook.close();
-            file.close();
-
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to read Excel data", e);
-        }
-
-        // Convert List<Map> → Object[][]
         Object[][] data = new Object[dataList.size()][1];
+
         for (int i = 0; i < dataList.size(); i++) {
             data[i][0] = dataList.get(i);
         }
 
         return data;
     }
+    @DataProvider(name = "userExcelData")
+    public Object[][] getUserData() {
 
+        String path = "C:\\Users\\Sai\\IdeaProjects\\RestAssuredAutomation\\RestAssuredStoreAutomation\\src\\test\\resources\\testData\\user.xlsx";
+
+        List<Map<String, String>> excelData =
+                ExcelReader.readUserExcel(path, "Sheet1");
+
+        Object[][] data = new Object[excelData.size()][1];
+
+        for (int i = 0; i < excelData.size(); i++) {
+            User user = UserBuilder.buildUser(excelData.get(i));
+            data[i][0] = user;
+        }
+
+        return data;
+    }
 }
+
+

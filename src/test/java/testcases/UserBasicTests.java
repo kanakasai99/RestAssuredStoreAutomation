@@ -9,7 +9,6 @@ import static org.hamcrest.Matchers.notNullValue;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
@@ -19,10 +18,10 @@ import pojo.User;
 import endpoints.EndPoints;
 
 
-public class UserTests extends BaseClass
+public class UserBasicTests extends BaseClass
 {
     private static final Logger log =
-            Logger.getLogger(UserTests.class);
+            Logger.getLogger(UserBasicTests.class);
 
     //1) Fetch all the users
     @Test
