@@ -37,8 +37,8 @@ public class ProductBasicTest extends BaseClass{
                 .then()
                 .log().body();
 
-        }
-@Test()
+    }
+    @Test()
     public void getProductsWithLimit(){
         given()
                 .pathParam("limit",3)
@@ -49,9 +49,9 @@ public class ProductBasicTest extends BaseClass{
                 .log().body()
                 .body("size()",equalTo(3));
     }
-@Test()
+    @Test()
     public void getProductSorted(){
-       Response response= given()
+        Response response= given()
                 .pathParam("order","desc")
                 .when()
                 .get(EndPoints.GET_PRODUCTS_SORTED)
@@ -59,7 +59,7 @@ public class ProductBasicTest extends BaseClass{
                 .statusCode(200)
                 .log().body()
                 .extract().response();
-      List<Integer> productIds= response.jsonPath().getList("id", Integer.class);
+        List<Integer> productIds= response.jsonPath().getList("id", Integer.class);
         assertThat(isSortedDescending(productIds),is(true));
     }
 
@@ -170,8 +170,3 @@ public class ProductBasicTest extends BaseClass{
     }
 
 }
-
-
-
-
-

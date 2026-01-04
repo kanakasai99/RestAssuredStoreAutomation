@@ -1,4 +1,4 @@
-<suite name="API TestSuite" threadcount="5" parallel="tests">
+<suite name="API TestSuite" threadcount="5" parallel="test">
     <listeners>
         <listener class-name="utils.ExtentReporter"/>
         <listener class-name="utils.TestListener"/>
